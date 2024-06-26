@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Edit text with rounded corners -->
+    <EditText
+        android:id="@+id/inputValue"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:hint="Enter value"
+        android:gravity="center"
+        android:textSize="70px"
+        android:textStyle="italic"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edittext_rounded_corner"
+
+    />
+
+
+    <Spinner
+        android:id="@+id/unitFromSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_marginTop="16dp"
+        android:hint="Select unit From"
+
+
+        android:background="@drawable/spinner_bg"
+    />
+
+    <Spinner
+        android:id="@+id/unitToSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_marginTop="16dp"
+        android:hint="Select unit to"
+
+        android:background="@drawable/spinner_bg_distination"
+    />
+
+    <!-- Convert button centered horizontally -->
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Convert"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_bg"/>
+
+    <!-- Result text view -->
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/res_textview"
+        android:textSize="24sp"
+        android:gravity="center"/>
+</LinearLayout>
